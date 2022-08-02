@@ -6,21 +6,24 @@ export default defineNuxtConfig({
     strict: true,
     shim: false
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
+  modules: [
+    "@nuxtjs/tailwindcss", 
+    // "@nuxt/image-edge"
+  ],
   // @nuxtjs/tailwindcss config
   tailwindcss: {
     viewer: false
   },
   // @nuxt/image-edge config
-  image: {
-    presets: {
-      avatar: {
-        modifiers: {
-          format: "webp",
-          width: 269,
-          height: 269
-        }
-      }
-    }
-  }
+  // image: {
+  //   presets: {
+  //     avatar: {
+  //       modifiers: {
+  //         format: "webp",
+  //         width: 269,
+  //         height: 269
+  //       }
+  //     }
+  //   }
+  // }
 })

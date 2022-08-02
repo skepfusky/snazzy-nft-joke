@@ -6,9 +6,11 @@
     <div
       class="mt-12 grid place-items-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5"
     >
-      <img
+      <nuxt-img
         class="md:h-[17rem] h-[15rem] md:w-[17rem] h-[15rem] rounded-2xl select-none hover:scale-[1.125] hover:rounded-none transition-scale duration-[275ms]"
         v-for="(img, index) in imgArray"
+        preset="avatar"
+        quality="80"
         :src="`/static/${img}.png`"
         :key="index"
         alt="Cutie"
@@ -83,6 +85,7 @@ useHead({
     { name: "twitter:website", content: "@skepfuskyjs" }
   ]
 })
+
 </script>
 
 <style>

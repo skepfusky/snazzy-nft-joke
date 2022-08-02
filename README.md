@@ -1,3 +1,4 @@
-# lol
+# Cutie
 
-nfts are stupid lmao
+Don't ask me why I made this
+
